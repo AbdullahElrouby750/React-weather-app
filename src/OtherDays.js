@@ -4,6 +4,8 @@ export default function OtherDays({day, data}) {
 
     const [dayData, setDayDate] = useState(data[day - 1]);
     const [date, setDate] = useState(new Date(dayData.date))
+    console.log(dayData);
+    
 
     return (
         <div className='days-dis w-100 d-flex flex-column align-items-center mx-2 py-3'>
